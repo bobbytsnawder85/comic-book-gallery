@@ -10,14 +10,8 @@ namespace ComicBookGallery.Controllers
     {
         public ActionResult Detail()
         {
-            if(DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
-            {
-                return new RedirectResult("/");
-            }
-            return Content("Hello from the comic books controller!");
-
             //ActionResult is almost always the return type for action methods.
-            
+            return View();
         }
     }
 }
