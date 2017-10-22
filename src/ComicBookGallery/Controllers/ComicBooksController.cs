@@ -11,6 +11,7 @@ namespace ComicBookGallery.Controllers
         public ActionResult Detail()
         {
             //ActionResult is almost always the return type for action methods.
+            //Controller base class's View() method can be used to return ViewResult objects.
             return View();
         }
     }
